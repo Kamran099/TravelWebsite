@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <section class="showcase">
+    <section class="showcase ">
         <header>
             <h2 class="logo">Travel</h2>
-            <div class="toggle"></div>
+            <div class="toggle "></div>
         </header>
-        <!-- <video src="travelvideo.mp4" muted loop autoplay></video> -->
+        <video src="travelvideo.mp4" muted loop autoplay></video>
 
         <div class="overlay"></div>
 
@@ -26,11 +26,14 @@
                 totam? Facilis, mollitia repellat. Error, culpa.</p>
             <a href="#">Explore</a>
         </div>
-        <ul class="social">
-            <li><img src="facebook.png" alt=""></li>
-            <li><img src="twitter.png" alt=""></li>
-            <li><img src="instagram.png" alt=""></li>
 
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt="" /></a>
+            </li>
+            <li><a href="#"><img src="twitter.png" alt="" /></a>
+            </li>
+            <li><a href="#"><img src="instagram.png" alt="" /></a>
+            </li>
         </ul>
     </section>
 
@@ -44,6 +47,17 @@
 
         </ul>
     </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+
 </body>
 
 </html>
